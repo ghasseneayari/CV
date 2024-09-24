@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> welcome to my page</title>
-    <link href="CSS/style.css" rel="stylesheet" >
-    <link href="ICONES/Logo.ico" rel="icon" type="image/x-icon">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="ICONES/Logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <section class="home" id="home">
   <nav>
     <h2>My <span> Resume</span> </h2>
-    <ul><li><a href="#home">Homme</a></li>
+    <ul><li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#time">experience</a></li>
+        <li><a href="#time">Work Experiences</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#Contact">Contact Me</a></li>
+        <li><a href="#experience">Services</a></li>
 
         </ul>
   </nav>
@@ -67,7 +68,7 @@
 </section>
 
 <section class="extimeline" id="time">
-  <h1 class="text-center">Expéri<span>ence</span></h1>
+  <h1 class="text-center">Work <span>Experiences</span></h1>
   <div class="timeline">
     <div class="containerT left-container">
       <div class="text-boxT animated" tabindex="0">
@@ -116,12 +117,14 @@
     <div class="card">
         <i class="fa-solid fa-microscope"></i>
         <h5>Project Management</h5>
-        <p>hi im ghassene</p>
+        <p>Define the project scope, objectives, and deliverables.
+          Develop a project plan that outlines tasks, timelines, resources, and milestones.</p>
     </div>
     <div class="card">
         <i class="fa-solid fa-list-check"></i>
         <h5>Manual Testing</h5>
-        <p>hi im ghassene</p>
+        <p>execute test cases for identifying bugs, usability issues, 
+          and other defects in software</p>
     </div>
 </div>
 
@@ -147,18 +150,31 @@
   
   <div class="container">
     <form method="post" action="https://script.google.com/macros/s/AKfycbxSh7g4OKRO1ia8-vDbzxgbdEwlWReDlyGPU9UebfPSmUxTRJ3-M57bBOZDxSvCV6W8/exec" name="contact">
-      <h2>Contact <samp>Me</samp> </h2>
-    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
-  <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
-  <input type="email" name="email" id="email" placeholder="Email" required>
-  <input type="text" name="mobile" id="mobile" placeholder="Mobile" required>
-  <h4>Type your Message Here...</h4>
-  <textarea name="textarea" required></textarea>
-  <input type="submit" value="Send" id="button">
-    </form>
-  </div>
+        <h2>Contact <samp>Me</samp></h2>
+        
+        <!-- Input for First Name -->
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
 
-  
+        <!-- Input for Last Name -->
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+        
+        <!-- Input for Email -->
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        
+        <!-- Input for Mobile -->
+        <input type="text" name="mobile" id="mobile" placeholder="Mobile" required>
+
+        <!-- Message Input -->
+        <h4>Type your Message Here...</h4>
+        <textarea name="textarea" placeholder="Your message..." required></textarea>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Send" id="button">
+    </form>
+</div>
+
+
+
  
 
 
@@ -167,9 +183,9 @@
   <div class="content-footer">
       <p class="text-center">Get in Touch</p>
       <div class="social-icons text-center">
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/ghassene-ayari/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ghasseneayari" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100011403726016" aria-label="Twitter"><i class="fab fa-facebook"></i></a>
       </div>
   </div>
   <h2 class="text-center">Ghassene <span>Ayari</span></h2>
@@ -179,4 +195,7 @@
 </footer>
 
 </body>
+
+
+
 
