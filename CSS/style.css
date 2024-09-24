@@ -242,13 +242,13 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+   
     .skills .container-immage {
         width: 50%;
     }
     
     .skills .container-immage img {
-        width: 80%;
+        width: 70%;
     }
     
     .skills .content-skills {
@@ -464,7 +464,7 @@
         background-color: var(--primaryColor);
     
     }
-    .container form #button{
+    .container form #button {
         border: none;
         background: #5125a9;
         border-radius: 5px;
@@ -476,8 +476,29 @@
         padding: 0;
         margin-right: 500px;
         margin-bottom: 30px;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
+    
+    /* Hover effect */
+    .container form #button:hover {
+        background: #714fc6;  /* Change the color on hover */
+        transform: scale(1.1);  /* Scale up slightly */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);  /* Add a shadow */
+    }
+    
+    /* Optional keyframe animation */
+    @keyframes buttonBounce {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    
+    /* Adding the keyframe animation when the button is hovered */
+    .container form #button:hover {
+        animation: buttonBounce 0.6s ease;
+    }
+    
     
     h3 {
         position: relative;
@@ -605,7 +626,7 @@
         background-color: white;  /* Ensure background behind image is white */
         object-fit: contain;  /* Ensure the whole logo fits within the circle */
         position: absolute;
-        right: -50%; /* Adjust position to align better */
+        right: -37%; /* Adjust position to align better */
         top: 50%;
         transform: translateY(-50%); /* Vertically align */
       }
@@ -619,7 +640,7 @@
         background-color: white;  /* Ensure background behind image is white */
         object-fit: contain;  /* Ensure the whole logo fits within the circle */
         position: absolute;
-        left: -50%; /* Adjust position to align better */
+        left: -33%; /* Adjust position to align better */
         top: 50%;
         transform: translateY(-50%); /* Vertically align */
       }
